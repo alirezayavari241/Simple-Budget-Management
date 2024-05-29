@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/6c21bd7ac2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="bgex">
+        <div class="budget">
+          <span>Budget</span>
+          <input
+            type="number"
+            placeholder="Enter total emount"
+            class="budget-input"
+            id="budget-input"
+          />
+          <button class="set" id="set">Set budget</button>
+        </div>
+        <div class="expenses">
+          <span>Expenses</span>
+          <input
+            type="text"
+            placeholder="Enter title of product"
+            id="producttitle"
+          />
+          <input
+            type="number"
+            placeholder="Enter cost of product"
+            id="productnumber"
+          />
+          <button class="check" id="check">Check amount</button>
+        </div>
+      </div>
+      <div class="calculate">
+        <table id="table">
+          <tr>
+            <th>Total Budget</th>
+            <th>Expenses</th>
+            <th>Balance</th>
+          </tr>
+          <th id="seted-budget">0</th>
+          <th id="seted-expenses">0</th>
+          <th id="seted-balance">0</th>
+        </table>
+      </div>
+      <div class="list" id="list">
+        <p>Expense List</p>
+      </div>
+    </div>
+  </body>
+</html>

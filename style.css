@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 252, 255);
+  font-family: sans-serif;
+  overflow: scroll;
+}
+.frame {
+  margin-top: 10px;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 15px;
+  border-radius: 10px;
+}
+.bgex {
+  gap: 10%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+span {
+  font-size: large;
+}
+.budget {
+  padding: 10px;
+  gap: 20px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+}
+input {
+  padding: 5px;
+  border: 0.5px solid gray;
+}
+.check,
+.set {
+  background-color: #4a82ff;
+  color: white;
+  width: 50%;
+  justify-content: left;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  font-size: medium;
+}
+.expenses {
+  padding: 10px;
+  gap: 20px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.expenses-input {
+  padding: 5px;
+}
+.calculate {
+  width: 100%;
+  height: 100px;
+  background-color: #4a82ff;
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+}
+table {
+  padding: 5px;
+  width: 100%;
+  border-spacing: 0 15px;
+}
+.list {
+  gap: 10px;
+  padding-left: 15px;
+  height: auto;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.items {
+  font-size: 10rem;
+  align-items: center;
+  width: 90%;
+  height: 30px;
+  border-left: 3px solid blue;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 5px;
+  margin-top: 10px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+@media screen and (max-width: 570px) {
+  * {
+    margin: 10px;
+  }
+  .frame {
+    margin-top: 20%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    column-gap: 5%;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+  }
+  .bgex {
+    gap: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  .expenses,
+  .budget,
+  .list,
+  .calculate {
+    width: 100%;
+    height: 100%;
+    gap: 0;
+  }
+}
